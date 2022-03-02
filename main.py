@@ -1,5 +1,6 @@
 # Import and initialize the pygame library
 import pygame
+import controller as cont
 
 class Game:
     """
@@ -9,6 +10,7 @@ class Game:
     def __init__(self, w, h, fps) -> None:
         self.__WIDTH = w
         self.__HEIGHT = h
+        # TODO activate fps management
         self.__fps = fps
         self.running = False
         self.pause = False
